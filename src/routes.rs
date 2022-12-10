@@ -28,11 +28,8 @@ pub mod endpoints {
         // Retrieve lesson data from the database
         let lesson_data = get_lesson(id);
 
-        if lesson_data.is_err() {
-            // Send error template when lesson is not found
-            Template::render("404", context!{ request: id })
-        } else {
-            // Unwrap the lesson data
+        if lesson_data.is_ok() {
+             // Unwrap the lesson data
             let lesson_data = lesson_data.unwrap();
 
             // Pass the data to a template
@@ -42,8 +39,12 @@ pub mod endpoints {
                 content: lesson_data.content,
                 code: lesson_data.code,
                 answer: lesson_data.answer
-            })}
-    }
+            })
+       } else {
+             // Send error template when lesson is not found
+            Template::render("404", context!{ request: id })
+       }
+   }
 }
 
 pub mod cookies {
@@ -71,7 +72,7 @@ pub mod cookies {
     pub fn read(cookie_manager: &CookieJar<'_>) -> Redirect {
         // Get the cookie from the client
         let cookie = cookie_manager.get("lesson")
-            .map(|cookie| format!("{}", cookie.value()))
+            .map(|cookie| cookie.value())
             .unwrap()
             .parse::<i64>()
             .unwrap();

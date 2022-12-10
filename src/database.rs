@@ -26,7 +26,7 @@ pub mod functions {
                         content: row.get(1)?,
                         code: row.get(2)?,
                         answer: row.get(3)?
-                    })})?
+                    })})
             )
     }
 }
