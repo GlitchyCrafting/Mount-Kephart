@@ -28,7 +28,7 @@ pub mod endpoints {
         // Retrieve lesson data from the database
         let lesson_data = get_lesson(id);
 
-        if lesson_data.is_ok() {
+        if let Ok(..) = lesson_data {
              // Unwrap the lesson data
             let lesson_data = lesson_data.unwrap();
 

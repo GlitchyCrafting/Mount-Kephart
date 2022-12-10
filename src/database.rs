@@ -18,7 +18,7 @@ pub mod functions {
         let database = Connection::open("db.sqlite")?;
 
         // Query the database
-        Ok(database.query_row(
+        database.query_row(
                 "SELECT name,content,code,answer FROM lesson WHERE _id = ?",
                 [id], |row| {
                     Ok(Lesson {
@@ -27,6 +27,5 @@ pub mod functions {
                         code: row.get(2)?,
                         answer: row.get(3)?
                     })})
-            )
     }
 }
