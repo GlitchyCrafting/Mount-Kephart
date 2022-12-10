@@ -1,6 +1,11 @@
 # Mount Kephart
 A learning platform used to teach students HTML (and maybe CSS in the future).
 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-rust.svg)](https://forthebadge.com) 
+![open-source](https://user-images.githubusercontent.com/74939524/206866352-368c4845-8e07-41d9-b65e-e275cca17af2.svg)
+![works-on-my-machine](https://user-images.githubusercontent.com/74939524/206866410-61df2174-7549-49d2-9c27-785710e36e23.svg)
+![gpl-v3+](https://user-images.githubusercontent.com/74939524/206866473-d05866de-1fff-498c-866d-5373c2f23c8f.svg)
+
 ## Binaries
 Both Linux and Windows Binaries will be provided.
 
