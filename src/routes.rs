@@ -28,7 +28,7 @@ pub mod endpoints {
         // Retrieve lesson data from the database
         let lesson_data = get_lesson(id);
 
-        let return_template = if lesson_data.is_err() {
+        if lesson_data.is_err() {
             // Send error template when lesson is not found
             Template::render("404", context!{ request: id })
         } else {
@@ -42,8 +42,7 @@ pub mod endpoints {
                 content: lesson_data.content,
                 code: lesson_data.code,
                 answer: lesson_data.answer
-            })};
-        return_template
+            })}
     }
 }
 
