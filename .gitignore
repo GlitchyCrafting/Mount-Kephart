@@ -1,4 +1,8 @@
 releases/
 target/
 build/
-Cargo.lock
+Clarfoghlama/
+*.lock*
+*-lock*
+./db.sqlite
+./Rocket.toml

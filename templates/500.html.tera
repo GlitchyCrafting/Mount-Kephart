@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utp-8">
-    <title>WDHANY - 500</title>
-    <link rel="stylesheet" href="static/global.css">
+    <meta charset="utf-8">
+    <title>Clarfoghlama - 500</title>
+    <link rel="stylesheet" href="styles/global.css">
   </head>
   <body>
     <h1>500</h1>

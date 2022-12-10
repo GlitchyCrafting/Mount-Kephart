@@ -1,10 +1,14 @@
 #!/bin/bash
 
-cargo build --release --target=x86_64-unknown-linux-gnu
-mkdir WDHANY
+mkdir Clarfoghlama
 
-cp ./target/release/wdhany ./WDHANY
-cp ./resources/db.sqlite ./WDHANY
-cp ./resources/libsqlite.so.0 ./WDHANY
-cp ./resources/Rocket.toml ./WDHANY
+cargo build --release
 
+cp ./resources/db.sqlite ./Clarfoghlama
+cp ./resources/Rocket.toml ./Clarfoghlama
+cp ./resources/libsqlite3.so.0 ./Clarfoghlama/
+
+cp -r ./templates ./Clarfoghlama
+cp -r ./static ./Clarfoghlama
+
+cp ./target/release/clarfoghlama ./Clarfoghlama

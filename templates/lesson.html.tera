@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WDHANY - Lesson {{ id }}</title>
+        <title>Clarfoghlama - Lesson {{ id }}</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/static/global.css">
+        <link rel="stylesheet" href="styles/global.css">
     </head>
     <body>
         <h1>{{ id }} - {{ name }}</h1>
@@ -16,8 +16,8 @@
 
         <button onclick="checkAnswer()">Submit</button>
 
-        <script src="/static/ace/ace.js"></script>
-        <script src="/static/ace/ext-language_tools.js"></script>
+        <script src="ace/ace.js"></script>
+        <script src="ace/ext-language_tools.js"></script>
         <script>
 
           const ANSWER = htmlDecode("{{ answer }}").replace(/\s+/g, '').toLowerCase();

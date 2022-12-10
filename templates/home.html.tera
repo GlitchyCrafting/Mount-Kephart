@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>WDHANY - Home</title>
-    <link rel="stylesheet" href="static/global.css">
+    <title>Clarfoghlama - Home</title>
+    <link rel="stylesheet" href="styles/global.css">
   </head>
   <body>
     <script>if ( document.cookie != "" ) { window.location.replace("/read"); }</script>
