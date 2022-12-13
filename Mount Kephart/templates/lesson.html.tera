@@ -39,7 +39,7 @@
          editor.setValue(htmlDecode("{{ code }}"), -1);
 
          function checkAnswer() {
-           if (editor.getValue().replace(/\s+/g, '') == ANSWER) {
+           if (editor.getValue().replace(/\s+/g, '').toLowerCase() == ANSWER) {
              window.location.replace("../write/{{ id }}");
            }
          }
