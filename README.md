@@ -6,8 +6,6 @@ A learning platform used to teach students HTML (and maybe CSS in the future).
 ![works-on-my-machine](https://user-images.githubusercontent.com/74939524/206866410-61df2174-7549-49d2-9c27-785710e36e23.svg)
 ![gpl-v3+](https://user-images.githubusercontent.com/74939524/206866473-d05866de-1fff-498c-866d-5373c2f23c8f.svg)
 
-[![Clippy & Tests](https://github.com/GlitchyCrafting/Mount-Kephart/actions/workflows/rust-clippy.yml/badge.svg)](https://github.com/GlitchyCrafting/Mount-Kephart/actions/workflows/rust-clippy.yml)
-
 ## Binaries
 Both Linux and Windows Binaries will be provided.
 
