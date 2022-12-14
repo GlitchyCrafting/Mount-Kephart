@@ -7,8 +7,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  rust-clippy-analyze:
-    name: Run rust-clippy analyzing
+  rust-actions:
+    name: Run clippy and tests
     runs-on: ubuntu-latest
     permissions:
       contents: read
